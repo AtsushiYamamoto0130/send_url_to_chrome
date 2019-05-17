@@ -1,0 +1,20 @@
+{
+  "name": "send_URL_to_slack",
+  "version": "0.1",
+  "description": "send url to slack",
+  "permissions": [
+    "https://slack.com/api/chat.postMessage",
+    "activeTab"
+  ],
+  "background":  {
+    "scripts": ["./jquery-2.1.3.min.js","./background.js"],
+    "persistant": false
+  },
+  "icons":{
+    "128": "./icon/icon.jpg"
+  },
+  "browser_action": {
+      "name": "Copy"
+  },
+  "manifest_version": 2
+}
