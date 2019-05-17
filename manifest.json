@@ -11,7 +11,7 @@
     "persistant": false
   },
   "icons":{
-    "128": "./icon/icon.jpg"
+    "128": "./icon/icon.png"
   },
   "browser_action": {
       "name": "Copy"
