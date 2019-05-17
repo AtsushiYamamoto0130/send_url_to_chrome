@@ -1,3 +1,4 @@
+(() =>{
 chrome.browserAction.onClicked.addListener(function(tab) {
   chrome.tabs.executeScript({
     code: `
@@ -15,7 +16,7 @@ if (window.XMLHttpRequest) {
 
 xmlhttp.open("POST", "https://slack.com/api/chat.postMessage", true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("token=xoxb-613905947863-622098600162-qcM42MuF0KU6Ok0ULz8yHHNH&channel=#test&text=タイトル :  " + title + "                                                                  URLはこちら 👉 : " + page_url )
+xmlhttp.send("token=<取得したSlackのAPI>&channel=<指定したいチャンネル>&text=タイトル :  " + title + "                                                                  URLはこちら 👉 : " + page_url )
 
 
 `
@@ -44,6 +45,8 @@ xmlhttp.send("token=xoxb-613905947863-622098600162-qcM42MuF0KU6Ok0ULz8yHHNH&chan
   }, 1000);
 
 });
+
+})
 
 // // fech
 
